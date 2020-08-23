@@ -4,9 +4,23 @@ class MiComponente extends React.Component {
 
     render() {
 
+        let receta =  {
+                        nombre: 'Pizza',
+                        calorias: 400,
+                        ingredientes: ['Queso', 'Tomate', 'Jamón']
+        }
 
         return (
-                <h1 className="zz">** Hola ! Soy el Componente Nuevo ** </h1>
+            <div>
+                <ul>
+                    <li>Nombre: {receta.nombre}</li>
+                    <li>Calorías: {receta.calorias}</li>
+                    
+                </ul>
+
+
+            </div>
+
 
         );
 
